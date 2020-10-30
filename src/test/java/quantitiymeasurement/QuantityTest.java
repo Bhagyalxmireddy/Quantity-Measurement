@@ -196,4 +196,18 @@ public class QuantityTest {
         boolean compareCheck = litre1.compare(milliLITRE1);
         Assert.assertTrue(compareCheck);
     }
+    @Test
+    public void given1GallonAnd3_78Litre_WhenAdd_ShouldReturn7_57Litres(){
+        UnitMeasurement gallon1 = new UnitMeasurement(CalculateVolume.GALLON,1.0);
+        UnitMeasurement litre1 = new UnitMeasurement(CalculateVolume.LITRE,3.78);
+        double result = gallon1.add(litre1);
+        Assert.assertEquals(7.56,result,0.0);
+    }
+    @Test
+    public void given1LitreAnd1000Millelitre_WhenAdd_ShouldReturn2Litres(){
+        UnitMeasurement litre1 = new UnitMeasurement(CalculateVolume.LITRE,1.0);
+        UnitMeasurement milliLITRE1 = new UnitMeasurement(CalculateVolume.MILLI_LITRE,1000.0);
+        double result = litre1.add(milliLITRE1);
+        Assert.assertEquals(2.0,result,0.0);
+    }
 }
