@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="quantitiymeasurement.QuantityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-30T03:33:55" hostname="DESKTOP-25DPEJS" time="0.009">
+<testsuite name="quantitiymeasurement.QuantityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-30T04:17:10" hostname="DESKTOP-25DPEJS" time="0.009">
   <properties/>
-  <testcase name="given0Feet0Feet_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.009"/>
+  <testcase name="given0Inch1Inch_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.009"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
