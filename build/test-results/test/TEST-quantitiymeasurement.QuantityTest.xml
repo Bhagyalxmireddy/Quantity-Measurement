@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="quantitiymeasurement.QuantityTest" tests="33" skipped="0" failures="0" errors="0" timestamp="2020-10-30T17:46:48" hostname="DESKTOP-25DPEJS" time="0.24">
+<testsuite name="quantitiymeasurement.QuantityTest" tests="34" skipped="0" failures="0" errors="0" timestamp="2020-10-30T17:58:01" hostname="DESKTOP-25DPEJS" time="0.217">
   <properties/>
-  <testcase name="given1FeetAnd1Yard_ShouldReturnNotEqual" classname="quantitiymeasurement.QuantityTest" time="0.008"/>
+  <testcase name="given1FeetAnd1Yard_ShouldReturnNotEqual" classname="quantitiymeasurement.QuantityTest" time="0.007"/>
   <testcase name="given0Inch1Inch_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given0InchAnd0Yard_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given1InchAnd1Yard_ShouldReturnNotEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given2InchAndHalfInch_WhenAdded_ShouldReturn3Inchs" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
-  <testcase name="given1TonneAnd1000Grams_WhenAdded_ShouldReturn1001Kg" classname="quantitiymeasurement.QuantityTest" time="0.015"/>
+  <testcase name="given1TonneAnd1000Grams_WhenAdded_ShouldReturn1001Kg" classname="quantitiymeasurement.QuantityTest" time="0.012"/>
   <testcase name="given1FeetAnd1Inch_ShouldReturnNotEqualLength" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given0FeetAnd0Yard_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given0FeetAnd0Inch_ShouldReturnEqualLength" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
@@ -16,24 +16,25 @@
   <testcase name="given3FeetAnd1Yard_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given1FeetAnd1Yard_WhenCompare_ShouldReturnNotEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given36InchAnd1Yard_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
-  <testcase name="given1YardAnd3Feet_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.001"/>
+  <testcase name="given1YardAnd3Feet_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.004"/>
   <testcase name="given1FeetAnd12Inch_WhenCompared_ShouldReturnEqualLength" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given1FeetAnd1Inch_ShouldReturnNotEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given0Feet0Feet_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
-  <testcase name="given12InchAnd1Feet_WhenCompared_ShouldReturnEqualLength" classname="quantitiymeasurement.QuantityTest" time="0.001"/>
+  <testcase name="given12InchAnd1Feet_WhenCompared_ShouldReturnEqualLength" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
   <testcase name="given0Yard1Yard_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
-  <testcase name="given1GallonAnd3_78Litre_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.023"/>
-  <testcase name="given2InchAnd2Inch_WhenAdded_ShouldReturn4Inchs" classname="quantitiymeasurement.QuantityTest" time="0.002"/>
-  <testcase name="given1KillogramAnd1000Grams_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.003"/>
-  <testcase name="given1GallonAnd3_78Litre_WhenAdd_ShouldReturn7_57Litres" classname="quantitiymeasurement.QuantityTest" time="0.002"/>
-  <testcase name="given1YardAnd36Inch_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.002"/>
-  <testcase name="given0Inch0Inch_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.003"/>
-  <testcase name="given1LitreAnd1000Millelitre_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.002"/>
+  <testcase name="given212FahrenheitAnd100Celsius_WhenCompared_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.01"/>
+  <testcase name="given1GallonAnd3_78Litre_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.033"/>
+  <testcase name="given2InchAnd2Inch_WhenAdded_ShouldReturn4Inchs" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
+  <testcase name="given1KillogramAnd1000Grams_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
+  <testcase name="given1GallonAnd3_78Litre_WhenAdd_ShouldReturn7_57Litres" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
+  <testcase name="given1YardAnd36Inch_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
+  <testcase name="given0Inch0Inch_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.001"/>
+  <testcase name="given1LitreAnd1000Millelitre_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.001"/>
   <testcase name="given1InchAnd1Yard_WhenCompare_ShouldReturnNotEqual" classname="quantitiymeasurement.QuantityTest" time="0.002"/>
-  <testcase name="given0Feet1Feet_ShouldReturnNotEqual" classname="quantitiymeasurement.QuantityTest" time="0.001"/>
-  <testcase name="given1InchAnd04Cm_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.002"/>
-  <testcase name="given1LitreAnd1000Millelitre_WhenAdd_ShouldReturn2Litres" classname="quantitiymeasurement.QuantityTest" time="0.001"/>
-  <testcase name="given1FeetAnd1Feet_WhenAdded_ShouldReturn24Inchs" classname="quantitiymeasurement.QuantityTest" time="0.0"/>
+  <testcase name="given0Feet1Feet_ShouldReturnNotEqual" classname="quantitiymeasurement.QuantityTest" time="0.003"/>
+  <testcase name="given1InchAnd04Cm_WhenCompare_ShouldReturnEqual" classname="quantitiymeasurement.QuantityTest" time="0.004"/>
+  <testcase name="given1LitreAnd1000Millelitre_WhenAdd_ShouldReturn2Litres" classname="quantitiymeasurement.QuantityTest" time="0.003"/>
+  <testcase name="given1FeetAnd1Feet_WhenAdded_ShouldReturn24Inchs" classname="quantitiymeasurement.QuantityTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

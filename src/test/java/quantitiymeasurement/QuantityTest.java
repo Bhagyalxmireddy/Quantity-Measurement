@@ -231,4 +231,11 @@ public class QuantityTest {
         double result = tonne1.add(gram1);
         Assert.assertEquals(1001,result,0.0);
     }
+    @Test
+    public void given212FahrenheitAnd100Celsius_WhenCompared_ShouldReturnEqual()  {
+        UnitMeasurement fahrenheit1 = new UnitMeasurement(CalculateTemperature.FAHRENHEIT,212);
+        UnitMeasurement celsius1 = new UnitMeasurement(CalculateTemperature.CELSIUS,100);
+        boolean compareCheck = fahrenheit1.compare(celsius1);
+        Assert.assertTrue(compareCheck);
+    }
 }
