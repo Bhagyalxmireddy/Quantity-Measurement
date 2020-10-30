@@ -17,12 +17,19 @@ public class UnitMeasurement {
         return Double.compare(quantity.value, value) == 0 && unit == quantity.unit;
     }
 
-    public boolean compare(UnitMeasurement thatUnit) {
-        if (this.unit.getClass() != thatUnit.unit.getClass())
+    public boolean compare(UnitMeasurement that) {
+        if (this.unit.getClass() != that.unit.getClass())
             return false;
-        if (this.unit.equals(thatUnit.unit))
-            return this.equals(thatUnit.unit);
+        if (this.unit.equals(that.unit))
+            return this.equals(that.unit);
         return Double.compare(this.unit.convertToBaseUnit(this.value),
-                thatUnit.unit.convertToBaseUnit(thatUnit.value)) == 0;
+                that.unit.convertToBaseUnit(that.value)) == 0;
+    }
+    public double add(UnitMeasurement that) {
+        if(this.unit.getClass() != that.unit.getClass() ||
+                !this.unit.additionOfLengths() || !that.unit.additionOfLengths())
+            return  0.0;
+        return this.unit.convertToBaseUnit(this.value) +
+                that.unit.convertToBaseUnit(that.value);
     }
 }

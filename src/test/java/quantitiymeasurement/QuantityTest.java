@@ -154,4 +154,32 @@ public class QuantityTest {
         boolean comparecheck = inch1.compare(cm1);
         Assert.assertTrue(comparecheck);
     }
+    @Test
+    public void given2InchAnd2Inch_WhenAdded_ShouldReturn4Inchs(){
+        UnitMeasurement inch1 = new UnitMeasurement(CalculateLength.INCH,2.0);
+        UnitMeasurement inch2 = new UnitMeasurement(CalculateLength.INCH,2.0);
+        double result = inch1.add(inch2);
+        Assert.assertEquals(4.0,result,0.0);
+    }
+    @Test
+    public void given1FeetAnd2Inch_WhenAdded_ShouldReturn14Inchs(){
+        UnitMeasurement feet1 = new UnitMeasurement(CalculateLength.FEET,1.0);
+        UnitMeasurement inch1 = new UnitMeasurement(CalculateLength.INCH,2.0);
+        double result = feet1.add(inch1);
+        Assert.assertEquals(14.0,result,0.0);
+    }
+    @Test
+    public void given1FeetAnd1Feet_WhenAdded_ShouldReturn24Inchs(){
+        UnitMeasurement feet1 = new UnitMeasurement(CalculateLength.FEET,1.0);
+        UnitMeasurement feet2 = new UnitMeasurement(CalculateLength.FEET,1.0);
+        double result = feet1.add(feet2);
+        Assert.assertEquals(24.0,result,0.0);
+    }
+    @Test
+    public void given2InchAndHalfInch_WhenAdded_ShouldReturn3Inchs(){
+        UnitMeasurement inch1 = new UnitMeasurement(CalculateLength.INCH,2.0);
+        UnitMeasurement cm1 = new UnitMeasurement(CalculateLength.CM,2.5);
+        double result = inch1.add(cm1);
+        Assert.assertEquals(3.0,result,0.0);
+    }
 }
