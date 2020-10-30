@@ -149,7 +149,7 @@ public class QuantityTest {
     }
     @Test
     public void given1InchAnd04Cm_WhenCompare_ShouldReturnEqual(){
-        UnitMeasurement inch1 = new UnitMeasurement(CalculateLength.INCH,0.394);
+        UnitMeasurement inch1 = new UnitMeasurement(CalculateLength.INCH,0.4);
         UnitMeasurement cm1 = new UnitMeasurement(CalculateLength.CM,1.0);
         boolean comparecheck = inch1.compare(cm1);
         Assert.assertTrue(comparecheck);
@@ -209,5 +209,26 @@ public class QuantityTest {
         UnitMeasurement milliLITRE1 = new UnitMeasurement(CalculateVolume.MILLI_LITRE,1000.0);
         double result = litre1.add(milliLITRE1);
         Assert.assertEquals(2.0,result,0.0);
+    }
+    @Test
+    public void given1KillogramAnd1000Grams_WhenCompare_ShouldReturnEqual(){
+        UnitMeasurement kg1 = new UnitMeasurement(CalculateWeight.KILOGRAM,1.0);
+        UnitMeasurement gram1 = new UnitMeasurement(CalculateWeight.GRAM,1000.0);
+        boolean compareCheck = kg1.compare(gram1);
+        Assert.assertTrue(compareCheck);
+    }
+    @Test
+    public void given1TonneAnd1000KiloGrams_WhenCompare_ShouldReturnEqual(){
+        UnitMeasurement tonne1 = new UnitMeasurement(CalculateWeight.TONNE,1.0);
+        UnitMeasurement kg1 = new UnitMeasurement(CalculateWeight.KILOGRAM,1000.0);
+        boolean compareCheck = tonne1.compare(kg1);
+        Assert.assertTrue(compareCheck);
+    }
+    @Test
+    public void given1TonneAnd1000Grams_WhenAdded_ShouldReturn1001Kg(){
+        UnitMeasurement tonne1 = new UnitMeasurement(CalculateWeight.TONNE,1.0);
+        UnitMeasurement gram1 = new UnitMeasurement(CalculateWeight.GRAM,1000.0);
+        double result = tonne1.add(gram1);
+        Assert.assertEquals(1001,result,0.0);
     }
 }
