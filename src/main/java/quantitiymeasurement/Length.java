@@ -11,6 +11,9 @@ public class Length {
         this.unit = unit;
         this.value = value;
     }
+    public boolean compare(Length that) {
+        return true;
+    }
     @Override
     public boolean equals(Object o){
         if(this == o) return true;

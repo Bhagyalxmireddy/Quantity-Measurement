@@ -37,4 +37,19 @@ public class QuantityTest {
         Length inch2 = new Length(Length.Unit.INCH,1.0);
         Assert.assertNotEquals(feet2,inch2);
     }
+    @Test
+    public void given0FeetAnd0Inch_ShouldReturnEqualLength(){
+        Length feet2 = new Length(Length.Unit.FEET,0.0);
+        Length inch2 = new Length(Length.Unit.INCH,0.0);
+        boolean comparecheck = feet2.compare(inch2);
+        Assert.assertTrue(comparecheck);
+    }
+    @Test
+    public void given1FeetAnd1Inch_ShouldReturnNotEqualLength() {
+        Length feet2 = new Length(Length.Unit.FEET,1.0);
+        Length inch2 = new Length(Length.Unit.INCH,1.0);
+        boolean comparecheck = feet2.compare(inch2);
+        Assert.assertFalse(comparecheck);
+
+    }
 }
