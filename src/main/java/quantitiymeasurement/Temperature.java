@@ -2,14 +2,14 @@ package quantitiymeasurement;
 
 import java.util.function.Function;
 
-public enum CalculateTemperature implements MeasurementUnits {
+public enum Temperature implements MeasurementUnits {
     FAHRENHEIT(true), CELSIUS(false);
 
     final Function<Double, Double> degreeFahrenheitToCelsius = (Double degF) ->(degF.doubleValue()-32)*5/9;
-    final Function<Double, Double> degreeCelsiusToFahrenheit = (Double degC) ->degC.doubleValue();
+    final Function<Double, Double> degreeCelsiusToFahrenheit = (Double degC) -> degC.doubleValue();
 
     final Function<Double, Double> baseConversionValue;
-    private   CalculateTemperature(boolean isFahrenheit) {
+    private Temperature(boolean isFahrenheit) {
         if(isFahrenheit) this.baseConversionValue  = degreeFahrenheitToCelsius;
         else this.baseConversionValue = degreeCelsiusToFahrenheit;
     }

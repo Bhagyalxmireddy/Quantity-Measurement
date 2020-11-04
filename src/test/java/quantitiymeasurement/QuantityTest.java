@@ -233,8 +233,8 @@ public class QuantityTest {
     }
     @Test
     public void given212FahrenheitAnd100Celsius_WhenCompared_ShouldReturnEqual()  {
-        UnitMeasurement fahrenheit1 = new UnitMeasurement(CalculateTemperature.FAHRENHEIT,212);
-        UnitMeasurement celsius1 = new UnitMeasurement(CalculateTemperature.CELSIUS,100);
+        UnitMeasurement fahrenheit1 = new UnitMeasurement(Temperature.FAHRENHEIT,212);
+        UnitMeasurement celsius1 = new UnitMeasurement(Temperature.CELSIUS,100);
         boolean compareCheck = fahrenheit1.compare(celsius1);
         Assert.assertTrue(compareCheck);
     }

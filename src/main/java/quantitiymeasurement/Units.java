@@ -8,7 +8,6 @@ public enum Units implements MeasurementUnits {
     private final double baseConversionValue;
 
     Units(double baseConversionValue) {
-
         this.baseConversionValue = baseConversionValue;
     }
 
